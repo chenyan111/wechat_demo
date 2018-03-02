@@ -1,0 +1,81 @@
+<view class="wapper">
+    <view class="top"> 
+        <view class="select_data">
+             <image src="../../images/prepage.png" class="img_class left" bindtap="clickbtn" 
+             data-year="{{before_year}}" data-month="{{before_month}}">
+             </image> 
+            <span>{{year}}年{{month}}月</span>
+             <image src="../../images/nextpage.png" class="img_class right" bindtap="clickbtn" 
+             data-year="{{next_year}}" data-month="{{next_month}}">
+             </image> 
+        </view>
+    </view>
+    <view class="data">
+        <view class="week">
+          <span class="day line">日</span>
+          <span class="day line">一</span>
+          <span class="day line">二</span>
+          <span class="day line">三</span>
+          <span class="day line">四</span>
+          <span class="day line">五</span>
+          <span class="day line">六</span>
+        </view>
+
+
+        <view >
+           <view class="day " wx:for="{{msg}}" wx:key="id">
+                <view bindtap="clickdata"   data-index="{{index}}"  class="every_day {{item.year==currentyear&&         item.month==currentmonth&&item.info==currentday?'border':''}} {{item.active?'back_red':''}}">  
+              
+                  <text class="{{item.month==month?'':'font_color'}}">{{item.info}}</text> 
+                </view>        
+            </view>
+        </view>
+
+
+        <view  wx:if="{{select_text}}">
+           <view class="text_class">{{select_text}}</view>
+           <view class="content_class" wx:if="{{data_event.length==0}}">当前日期没有事项记录</view>
+           <view wx:else >
+              <view wx:for="{{data_event}}" wx:key="{{key}}" bindtap="click_remove" data-key="{{item.key}}" style="overflow:hidden;padding-left:20rpx" class="content_class">
+                <view style='float:left'>
+                  <icon type='success' size="45" color="green" wx:if="{{item.flag=='firstflag'}}" ></icon>
+                  <icon type='success' size="45" color="orange" wx:if="{{item.flag=='secondflag'}}"></icon>
+                  <icon type='success' size="45" color="red" wx:if="{{item.flag=='thirdflag'}}"></icon>
+                </view>
+                <view style='float:left;padding-top:20rpx;padding-left:20rpx;'><text>{{item.content_value}}</text> </view>
+                
+                
+              </view>            
+           </view>
+           <view class="img_plus" bindtap="click_animate">
+              <image src="../../images/plus.png" style='width: 60rpx;height: 60rpx;margin-top: 20rpx;'></image>
+           </view> 
+        </view>
+        
+
+
+        
+        
+    </view>
+    
+
+
+       
+    
+</view>
+ <view animation="{{animation}}" class="animation_class" style="position:relative;">
+       <input type="text" placeholder='请输入标题' class="input_class" bindinput='input_title' value="{{title_value}}"></input> 
+       <textarea placeholder='请输入内容' class="input_class" bindinput='input_content' value="{{content_value}}" style="height:200rpx;border-top:1px solid black; padding-top:12rpx">
+       </textarea> 
+       <view style="position:absolute;bottom:0;width:100%;">
+            <view class="wapper_circle">   
+              <icon type="{{firstflag?'success':'circle'}}" color="green" size="40" bindtap="click_circle" data-level="firstflag"></icon>　
+              <icon type="{{secondflag?'success':'circle'}}" color="orange" size="40" bindtap="click_circle" data-level="secondflag"></icon>　
+              <icon type="{{thirdflag?'success':'circle'}}" color="red" size="40" bindtap="click_circle" data-level="thirdflag"></icon>
+            </view>    
+            <button class="btn-class" plain	bindtap="click_cancel" ><text style='color:white' >取消</text></button>
+            <button type="warn" class="btn-class" bindtap='click_keep'>确定</button>
+       </view>    
+ </view>
+         
+

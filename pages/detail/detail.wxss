@@ -1,0 +1,10 @@
+/* pages/detail/detail.wxss */
+page{
+  background: black;
+  color:white;
+  font-size: 30rpx;
+}
+.margin_style{
+  margin-top: 20rpx;
+  padding-left:16rpx;
+}

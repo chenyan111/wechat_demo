@@ -1,0 +1,49 @@
+<view class="all" >
+    <view class='oneclass'>
+        <view  class="showclass">{{message}}</view>
+    </view>
+
+    <view class="contentclass" >
+        <view class='btn_class color_orange' hover-class='hoverclass' bindtap="remove">C</view>
+        <view class='btn_class color_orange' hover-class='hoverclass' bindtap="delnum">DEL</view>
+        <view class='btn_class color_orange' hover-class='hoverclass'>  
+            <navigator url="../history/history">
+                <icon type="waiting_circle" size='30' color='black'  class="iconclass"/>
+            </navigator>
+        </view>
+        <view class='btn_class last color_orange' hover-class='hoverclass' data-num="+" bindtap="clicknum">+</view>
+    </view>
+
+
+
+     <view class="contentclass">
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="9" bindtap="clicknum">9</view>
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="8" bindtap="clicknum">8</view>
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="7" bindtap="clicknum">7</view>
+        <view class='btn_class last color_orange' hover-class='hoverclass' data-num="-" bindtap="clicknum">-</view>
+    </view>
+
+     <view class="contentclass">
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="6" bindtap="clicknum">6</view>
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="5" bindtap="clicknum">5</view>
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="4" bindtap="clicknum">4</view>
+        <view class='btn_class last color_orange' hover-class='hoverclass' data-num="×" bindtap="clicknum">×</view>
+    </view>
+
+     <view class="contentclass">
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="3" bindtap="clicknum">3</view>
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="2" bindtap="clicknum">2</view>
+        <view class='btn_class color_blue' hover-class='hoverclass' data-num="1" bindtap="clicknum">1</view>
+        <view class='btn_class last color_orange' hover-class='hoverclass' data-num="÷" bindtap="clicknum">÷</view>
+    </view>
+
+    
+
+     <view class="contentclass">
+        <view class=' color_blue width_class' hover-class='hoverclass' data-num="0" bindtap="clicknum">0</view>
+        <view class='btn_class color_blue' hover-class='hoverclass'>.</view>
+        <view class='btn_class last color_orange' hover-class='hoverclass' bindtap="numeql">=</view>
+    </view> 
+
+
+</view>

@@ -1,0 +1,15 @@
+<view class="margin_style">
+  标题：{{title}}
+</view>
+<view class="margin_style">
+  内容：{{content}}
+</view>
+<view class="margin_style">
+  日期：{{date}}
+</view>
+<view class='margin_style'>
+  事件等级：
+  <icon type="success" size="20" color="green" wx:if="{{flag=='firstflag'}}"></icon>
+   <icon type="success" size="20" color="orange" wx:if="{{flag=='secondflag'}}"></icon>
+   <icon type="success" size="20" color="red" wx:if="{{flag=='thirdflag'}}"></icon>
+</view>

@@ -1,0 +1,133 @@
+page{
+  height: 100%;
+   overflow: hidden; 
+}
+.wapper{
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+.top{
+  /* text-align: center; */
+  height: 8%;
+  width: 100%;
+  background: red;
+   background: #E14848; 
+  padding-top:20rpx;
+  box-sizing: border-box
+
+}
+
+.select_data{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color:white;
+ 
+}
+
+.img_class{
+  width: 50rpx;
+  height: 50rpx;
+  
+}
+.left{
+  position: absolute;
+  left:10rpx;
+  top:-2rpx;
+}
+.right{
+  position: absolute;
+  right:10rpx;
+  top:-2rpx;
+}
+.data{
+  color: white;
+  width: 100%;
+  height: 92%;
+}
+.week{
+  height:8%;
+  border-bottom: 1px solid #333333;
+}
+.day{
+  display:inline-block;
+  width: 14.28%;
+  height: 92rpx;
+  text-align: center;
+   font-size: 16px; 
+}
+.line{
+    line-height: 92rpx;  
+}
+.every_day{
+  width: 70rpx;
+  margin: 16rpx auto;
+  height: 60rpx;
+  line-height: 60rpx;
+   border-radius:50%; 
+}
+.back_red{
+   background: #E14848; 
+}
+.border{
+  border: 1px solid #E14848;
+}
+
+.font_color{
+  color: grey;
+}
+.text_class{
+  text-align: center;
+  color: #E14848;
+  font-size: 60rpx;
+   width: 90%;
+   margin: 0 auto;
+   margin-top: 40rpx; 
+  padding-bottom:30rpx;
+  border-bottom: 1px solid #333333;
+}
+.content_class{
+  color:grey;
+  text-align:center;
+  font-size:30rpx;
+  padding-top:16rpx;
+}
+.img_plus{
+  width: 100rpx;
+  height: 100rpx;
+  background: #E14848;
+  border-radius: 50%;
+   opacity: .5;
+  text-align: center;
+  position: fixed;
+  top:85%;
+  left: 83%;
+}
+.animation_class{
+  width:100%;
+  height:100%;
+  background:black;
+  color:grey;
+}
+.input_class{
+  width:100%;
+  background:#333333;
+  height:70rpx;
+  padding-left:20rpx;
+  caret-color: #E14848;
+  font-size:32rpx;
+}
+.btn-class{
+  width: 50%;
+  display: inline-block;
+  border-radius:0;
+   overflow: 	visible; 
+}
+.wapper_circle{
+  width:100%;
+  height:100rpx;
+  text-align:center;
+}

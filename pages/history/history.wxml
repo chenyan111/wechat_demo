@@ -1,0 +1,7 @@
+<view>
+    <view wx:for="{{arr}}"  >
+    <text>{{index+1}}.　{{item.time}}　{{item.str}}</text>
+    </view> 
+   
+
+</view>
